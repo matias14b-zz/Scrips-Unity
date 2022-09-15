@@ -12,7 +12,7 @@ public class movimientoEnemigo : MonoBehaviour
         Transform goal = goals[destinoActual];
         NavMeshAgent agent = GetComponent<NavMeshAgent>();
         agent.destination = goal.position;
-        if (Vector3.Distance(enemigo.transform.position, goal.position) <=1f)
+        if (estaCercaDeDestino(enemigo, goal))
         {
             destinoActual =  (destinoActual + 1) % goals.Length;
         }
