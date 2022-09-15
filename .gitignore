@@ -6,6 +6,9 @@
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
+/[Pp]rojectSettings/
+/[Uu]serSettings/
+/[Aa]ssets/[Ss]cenes/
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
@@ -43,6 +46,9 @@ ExportedObj/
 *.opendb
 *.VC.db
 *.meta
+*.prefab
+*.mat
+*.asset
 
 # Unity3D generated meta files
 *.pidb.meta
