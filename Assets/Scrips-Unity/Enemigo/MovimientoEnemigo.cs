@@ -16,7 +16,6 @@ public class MovimientoEnemigo : MonoBehaviour
         {
             destinoActual =  (destinoActual + 1) % goals.Length;
         }
-      bool estado=  agent.hasPath;
        
     }
 
