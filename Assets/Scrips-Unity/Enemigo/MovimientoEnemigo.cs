@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class movimientoEnemigo : MonoBehaviour
+public class MovimientoEnemigo : MonoBehaviour
 {
     public GameObject enemigo;
     public Transform[] goals;
@@ -16,6 +16,12 @@ public class movimientoEnemigo : MonoBehaviour
         {
             destinoActual =  (destinoActual + 1) % goals.Length;
         }
+      bool estado=  agent.hasPath;
        
+    }
+
+    private bool estaCercaDeDestino(GameObject enemigo, Transform goal)
+    {
+        return Vector3.Distance(enemigo.transform.position, goal.position) <= 1f;
     }
 }
